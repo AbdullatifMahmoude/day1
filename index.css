@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+
+    text-decoration: none;
+    list-style: none;
+
+    position: relative;
+}
+
+:root {
+    --blue: #007bff;
+    --light-blue: #d1e3ff;
+    --orange: #ff8a1d;
+    --dark-blue: #0a0f43;
+}
+
+body {
+    max-width: 100svw;
+    height: 100svh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: var(--light-blue);
+}
+
+h1 {
+    color: var(--blue);
+    font-size: 2.3rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 1.4rem;
+}
+
+nav ul li a:hover {
+    color: var(--blue);
+}
+
+.home-link {
+    color: var(--blue);
+}
+.sec1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    background-color: var(--light-blue);
+    gap: 30px;
+}
+
+.dash{
+    width: 50%;
+}
+img{
+    height: 90%;
+    padding: 10px;
+}
+
+.dash h2{
+    width: 50%;
+    color: var(--blue);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.dash p{
+    color: #4f4f4f;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.dash button{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    color: white;
+    padding: 15px  50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.dash button:hover{
+    color: var(--orange);
+    background-color: var(--light-blue);
+}
+.offers{
+    min-height: 40vh;
+    top: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 7px gray;
+    height: 250px;
+    width: 25%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.offer:hover{
+    background-color: var(--orange);
+    color: white;
+}
+
+.aboutus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 40px;
+    margin: 0 auto 10px;
+    padding: 20px;
+    top: -150px;
+}
+
+.aboutus img{
+    width: 50%;
+}
+.aboutus .info h2{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.aboutus .info p{
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #4f4f4f;
+}
+.aboutus .info button{
+     background-color: var(--blue);
+     border: 1px solid var(--blue);
+     color: white;
+     font-weight: bold;
+     padding: 15px 25px; 
+     font-size: 1rem;
+     border-radius: 10px;
+}
+.sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-blue);
+    gap: 30px;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 10px;
+    min-height: 50svh;
+}
+.services h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0px 0px 7px gray;
+    border-radius: 10px;
+    padding: 40px 20px;
+    width: 20%;
+}
+.service:hover{
+    background-color: var(--orange);
+    color: white;
+}
+.service i{
+    font-size: 3rem;
+}
+.service h3{
+    font-size: 1.5rem;
+}
+.services button{
+    background-color: var(--blue);
+     border: 1px solid var(--blue);
+     color: white;
+     font-weight: bold;
+     padding: 15px 50px; 
+     font-size: 1rem;
+     border-radius: 10px;
+}
+.services button:hover{
+    background-color: white;
+    color: var(--blue);
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 80svh;
+    padding: 10px 10px 40px 10px;
+}
+
+.contact h2 {
+    margin-bottom: 60px;
+}
+
+.contact-info {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-info form {
+    width: 40%;
+
+}
+
+.contact-info form input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    display: block;
+    box-shadow: 0px 0px 7px #ccc;
+    text-transform: capitalize;
+font-size: 1.3rem;
+}
+
+.feedback {
+    height: 100px;
+}
+
+.send-btn {
+   background-color: var(--blue);
+     border: 1px solid var(--blue);
+     color: white;
+     font-weight: bold;
+     padding: 15px 40px; 
+     font-size: 0.9rem;
+     border-radius: 10px;
+}
+
+iframe {
+    width: 40%;
+    height: 400px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+@media (max-width: 1240px) {
+    .offers {
+        top: 0px;
+    }
+    .aboutus{
+        top: 0;
+    }
+    .aboutus .info p{
+    font-size: 1.1rem;
+}
+.aboutus .info h2{
+    font-size: 2.1rem;
+}
+.aboutus .info button{
+     font-size: 0.9rem;
+}
+.sec2 img{
+    max-width: 60%;
+}
+}
+@media (max-width: 768px) {
+    .sec1 img {
+        height: 30%;
+        width: 90%;
+    }
+    .dash {
+        padding-top: 10px;
+        width: 70%;
+    }
+    .offers {
+        flex-direction: column;
+    }
+    .offer{
+        width: 80%;
+        height: 200px;
+    }
+    .services-container{
+        flex-direction: column;
+    }
+    .service{
+        width: 80%;
+    }
+    .aboutus{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .info {
+        width: 80%;
+    }
+   .aboutus img{
+    width: 80%;
+}
+
+.sec2{
+    height: 80svh;
+}
+.sec2 img{
+    display: none;
+}
+.contact-info {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info form,
+    iframe {
+        width: 90%;
+    }
+}
